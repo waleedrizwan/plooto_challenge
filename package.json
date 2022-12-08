@@ -1,0 +1,22 @@
+{
+  "name": "plooto_challenge",
+  "version": "1.0.0",
+  "description": "Contains tests written for a sample website",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waleedrizwan/plooto_challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waleedrizwan/plooto_challenge/issues"
+  },
+  "homepage": "https://github.com/waleedrizwan/plooto_challenge#readme",
+  "devDependencies": {
+    "cypress": "^12.0.2"
+  }
+}
