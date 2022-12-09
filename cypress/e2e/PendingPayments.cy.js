@@ -15,6 +15,15 @@ describe('Pending Payment Approvals', () => {
       
     })
 
+    it('Selecting Cavages displays payment sent details ', ()=> {
+        cy.contains('Pending Payments').click()
+        cy.contains('Pending Payables')
+        cy.contains('Pending Receivables')
+      
+    })
 
-    
+
+
+
+
   })
