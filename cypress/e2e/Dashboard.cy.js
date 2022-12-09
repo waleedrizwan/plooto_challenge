@@ -8,7 +8,8 @@ describe('Company Selection Page', () => {
       })
     
     it('Verify dashboard has loaded with no issue', () => {
-
+        // checks for errors with loading the page
+        // if the page loads without error it will contain the following text 
         cy.contains('Click here to finish company verification')
         cy.contains('Payment Approvals')
         cy.contains('Pending Payments')

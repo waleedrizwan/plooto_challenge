@@ -14,16 +14,26 @@ describe('Pending Payment Approvals', () => {
         cy.contains('Pending Receivables')
       
     })
+ 
+    it('Selecting any contact other than Cavages does not navigate to approval page ', () => {
+      cy.contains('Pending Payments').click()
+      cy.contains('Baltimore Markets').click()
 
-    it('Selecting Cavages displays payment sent details ', ()=> {
+      // should display payment details, approval process and audit trail information
+      cy.contains('Pending Payables')
+      cy.contains('Pending Receivables')
+    
+  })
+
+
+    it('Selecting Cavages navigates to payment approval page ', ()=> {
         cy.contains('Pending Payments').click()
-        cy.contains('Pending Payables')
-        cy.contains('Pending Receivables')
+        cy.contains('Cavages').click()
+
+        // should display payment details, approval process and audit trail information
+        cy.contains('Sent Payment Details')
+        cy.contains('Payment Approval History')
+        cy.contains('Audit Trail')
       
     })
-
-
-
-
-
   })

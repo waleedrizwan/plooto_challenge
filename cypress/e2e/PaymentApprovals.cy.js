@@ -7,8 +7,11 @@ describe('Payment Approvals Page', () => {
         cy.get('table').contains('Plooto Inc').click()
       })
 
-    it('Selecting Payments Approvals displays payment approvals with no errors', ()=> {
+    it('Selecting Payments Approvals displays payment approvals with no errors', () => {
+        // selects the table element from the dom which contains the text and left clicks
         cy.contains('Payment Approvals').click()
+        // checks for errors with loading the page
+        // if the page loads without error it will contain the following text 
         cy.contains('Payments Awaiting My Approval')
         cy.contains('All Payments Awaiting Approval')
     })
