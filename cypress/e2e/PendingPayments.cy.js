@@ -9,6 +9,7 @@ describe('Pending Payment Approvals', () => {
       })
 
     it('Selecting Pending Payments displays payments with no error ', ()=> {
+        // select and clicks link containing 'pending payments' text 
         cy.contains('Pending Payments').click()
         cy.contains('Pending Payables')
         cy.contains('Pending Receivables')
@@ -16,8 +17,11 @@ describe('Pending Payment Approvals', () => {
     })
  
     it('Selecting any contact other than Cavages does not navigate to approval page ', () => {
+     // select and clicks link containing 'pending payments' text 
       cy.contains('Pending Payments').click()
+     // select and clicks link containing 'baltimore markets' text 
       cy.contains('Baltimore Markets').click()
+
 
       // should display payment details, approval process and audit trail information
       cy.contains('Pending Payables')

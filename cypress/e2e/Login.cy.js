@@ -12,7 +12,7 @@ describe('Login Page', () => {
     })
     
     it('Sign in takes user to Company Selection Screen', () => {
-        // select button element and left click
+        // select and clicks button element containing 'sign in' text
         cy.contains('Sign In').click()
         // check for correct URL 
         cy.url().should('include', 'company_select.html')
