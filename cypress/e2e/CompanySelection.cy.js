@@ -35,7 +35,6 @@ describe('Company Selection Page', () => {
       cy.contains('Clients')
       cy.contains('Add New Client')
 
-      
   })
 
     it('Selecting Plooto Inc from client table takes user to dashboard', () => {
@@ -48,8 +47,5 @@ describe('Company Selection Page', () => {
         cy.contains('Completed Payments')
         cy.contains('Foreign Exchange Calculator')
 
-        
     })
-
-
 })
