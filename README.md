@@ -1,7 +1,9 @@
 # Plooto Challenge
 ![workflow](https://github.com/waleedrizwan/plooto_challenge/actions/workflows/node.js.yml/badge.svg)
 
-### File directo
+### Structure
+- cypress/e2e contains all test files
+- .github/workflows contains the yml file that describes the testing workflow
 - All tests are written based on specified functionality 
 - Tests for each page are contained in the file with the page name
 - Tests are run automatically at the end of every day, and on each pull/push request 
