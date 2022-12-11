@@ -16,12 +16,9 @@
 4. run "npm test"
 
 ### Notes
-- valid log in credentials not given
-- Users can log in without a username or password, and any user name and password works
+- Valid user log-in credentials not given to test user authentication
+- React components state not given 
+- Sign in button performs no auth, auto redirects to company selection page
 - Search feature on company select page on client list does not function 
 - Users can access all pages without logging in
 - Refreshing any page does not redirect user to log in screen
-
-
-
-
