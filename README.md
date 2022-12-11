@@ -1,7 +1,7 @@
 # Plooto Challenge
 ![workflow](https://github.com/waleedrizwan/plooto_challenge/actions/workflows/node.js.yml/badge.svg)
 
-### Structure
+### About
 - cypress/e2e contains all test files
 - .github/workflows contains the yml file that describes the testing workflow
 - All tests are written based on specified functionality 
@@ -15,7 +15,8 @@
 3. run "npm install"
 4. run "npm test"
 
-### Notes 
+### Notes
+- valid log in credentials not given
 - Users can log in without a username or password, and any user name and password works
 - Search feature on company select page on client list does not function 
 - Users can access all pages without logging in
