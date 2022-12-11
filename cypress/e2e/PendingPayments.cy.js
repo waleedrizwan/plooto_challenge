@@ -11,6 +11,7 @@ describe('Pending Payment Approvals', () => {
     it('Selecting Pending Payments displays payments with no error ', ()=> {
         // select and clicks link containing 'pending payments' text 
         cy.contains('Pending Payments').click()
+        // user succesfully navigates to pending payments page and it contains the following text
         cy.contains('Pending Payables')
         cy.contains('Pending Receivables')
       
@@ -21,9 +22,7 @@ describe('Pending Payment Approvals', () => {
       cy.contains('Pending Payments').click()
      // select and clicks link containing 'baltimore markets' text 
       cy.contains('Baltimore Markets').click()
-
-
-      // should display payment details, approval process and audit trail information
+      // user remains on pending payments page and the following text will display
       cy.contains('Pending Payables')
       cy.contains('Pending Receivables')
     
