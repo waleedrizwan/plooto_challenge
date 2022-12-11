@@ -13,12 +13,12 @@
 1. [Install Node on system](https://nodejs.org/en/download/)
 2. clone repo
 3. run "npm install"
-4. run "npm test"
+4. run "npm test" (results displayed in terminal)
 
 ### Notes
 - Valid user log-in credentials not given to test user authentication
 - React components state not given 
 - Sign in button performs no auth, auto redirects to company selection page
-- Search feature on company select page on client list does not function 
+- Client List search feature on company select page does not function 
 - Users can access all pages without logging in
 - Refreshing any page does not redirect user to log in screen
