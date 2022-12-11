@@ -2,6 +2,7 @@
 ![workflow](https://github.com/waleedrizwan/plooto_challenge/actions/workflows/node.js.yml/badge.svg)
 
 ### About
+- Structured to run in same repo as source code 
 - cypress/e2e contains all test files
 - .github/workflows contains the yml file that describes the testing workflow
 - All tests are written based on specified functionality 
