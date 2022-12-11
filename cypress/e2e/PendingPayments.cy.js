@@ -31,7 +31,9 @@ describe('Pending Payment Approvals', () => {
 
 
     it('Selecting Cavages navigates to payment approval page ', ()=> {
+        // select and clicks link containing 'pending payments' text   
         cy.contains('Pending Payments').click()
+        // select and clicks link containing 'Cavages' text 
         cy.contains('Cavages').click()
 
         // should display payment details, approval process and audit trail information
